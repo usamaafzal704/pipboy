@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PipBoy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="pipboystyle.css">
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportContent">
+
+          <ul class="navbar-nav nav-fill">
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">STAT</a></li>
+              <li class="navbar-item active"><a class="nav-link active" aria-current="page" href="inv.html">INV</a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="data.html">DATA</a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="map.html">MAP</a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="radio.html">RADIO</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+
+            <ul class="nav nav-tabs" id="mytab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" id="status-tab" data-bs-toggle="tab" data-bs-target="#status" type="button" role="tab" aria-controls="status" aria-selected="true">WEAPONS</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="special-tab" data-bs-toggle="tab" data-bs-target="#special" type="button" role="tab" aria-controls="special" aria-selected="false">ARMORY</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="perks-tab" data-bs-toggle="tab" data-bs-target="#perks" type="button" role="tab" aria-controls="perks" aria-selected="false">ARTIFACTS</a>
+                </li>
+            </ul>
+
+
+
+                <div class="stat-bars">
+                    <div class="tab-content" id="myTabContent">
+
+                        <div class="tab-pane fade show active inv" id="status" role="tabpanel" aria-labelledby="status-tab">
+
+                            <ul class="item-list">
+                                <li><a href="#" class="44_pistol">44 Pistol</a></li>
+                                <li><a href="#" class="10mm_pistol">10mm Pistol</a></li>
+                                <li><a href="#" class="assault_rifle">Assault Rifle</a></li>
+                            </ul>
+
+                            <div><img class="pistol" src="pistol.png"></div>
+
+
+                            <div class="item-stats">
+
+                              <div class="row-highlight">
+                                  <div class="row">
+                                    <div class="col-12">
+                                      <div class="catagory pull-right">Pistol</div>
+                                      <div class="pull-left">Catagory</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              
+                                <div class="row-highlight">
+                                  <div class="row">
+                                    <div class="col-12">
+                                      <div class="damage pull-right">48</div>
+                                      <div class="pull-left">Damage</div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                 <div class="row-highlight">
+                                  <div class="row">
+                                    <div class="col-12">
+                                      <div class="fire_rate pull-right">6</div>
+                                      <div class="pull-left">Fire Rate</div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                 <div class="row-highlight">
+                                  <div class="row">
+                                    <div class="col-12">
+                                      <div class="range pull-right">119</div>
+                                      <div class="pull-left">Range</div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                 <div class="row-highlight">
+                                  <div class="row">
+                                    <div class="col-12">
+                                      <div class="accuracy pull-right">66</div>
+                                      <div class="pull-left">Accuracy</div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                 <div class="row-highlight">
+                                  <div class="row">
+                                    <div class="col-12">
+                                      <div class="weight pull-right">4.2</div>
+                                      <div class="pull-left">Weight</div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                 <div class="row-highlight">
+                                  <div class="row">
+                                    <div class="col-12">
+                                      <div class="value pull-right">99</div>
+                                      <div class="pull-left">Value</div>
+                                    </div>
+                                  </div>
+                                </div>  
+
+                             </div>
+                              
+                        </div>  
+                        <div class="tab-pane fade" id="special" role="tabpanel" aria-labelledby="special-tab">
+                            <div class="center-image3"><img src="armor.png"></div>
+                        </div>
+                        <div class="tab-pane fade" id="perks" role="tabpanel" aria-labelledby="perks-tab">
+                              <div class="center-image4"><img src="artifact.png"></div>
+                      </div>
+
+                    </div>
+                </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+      <navbar class="container pip-footer inv">
+        <div class="row"  >
+
+          <div class="col-3">  
+            HP 90/90
+          </div>
+          <div class="col-6">
+            LEVEL 1
+              <div class="level-progress">
+                <div class="level-progress-indicator"></div>
+              </div>
+          </div>
+          <div class="col-3" style="text-align:right;">
+            AP 50/50
+          </div>
+
+        </div>
+      </navbar>
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="pipboycode.js"></script>
+
+  </body>
+</html>
