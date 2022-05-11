@@ -317,10 +317,12 @@ body::after{
     color: #14fe17;
     border-radius: 2px;
     position: relative;
+    transition: all 0.3s;
 }
 .item-list li a:hover{
   background:#14fe17 ;
   color: #272b23;
+  transform: scale(1.1);
 }
 
 .item-list a.active::before{
